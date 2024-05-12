@@ -1,0 +1,156 @@
+:root {
+    --disabled-button-accent-color: #cccccc;
+    --disabled-button-hover-accent-color: #ccccccff
+}
+
+#serving_team_section {
+    width: 100%;
+    text-align: center;
+}
+
+#score_section {
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+
+.team_score_container {
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+.team_score_container p {
+    color: var(--secondary-accent-color);
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#team1_score_container{
+    border-right: 1px solid grey;
+}
+#team2_score_container{
+    border-left: 1px solid grey;
+}
+
+
+.team_name {
+    margin-top: 10px;
+}
+
+.team_score {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.score_button {
+    border-radius: 6px
+}
+@media(max-width: 320px){
+    .score_button {
+        padding: 2px 20px;   
+    }
+}
+
+.disabled_state {
+    background-color: var(--disabled-button-accent-color);
+    cursor: default;
+}
+
+.disabled_state:hover {
+    background-color: var(--disabled-button-hover-accent-color);
+}
+
+#team1_score_button{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#team2_score_button{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#set_section {
+    margin-top: 15px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.team_sets_container {
+    flex-grow: 1;
+    display: flex;
+    gap: 10px;
+    height: 20px;
+}
+
+#team1_sets_container {
+
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+#team2_sets_container {
+
+    margin-left: 10px;
+}
+
+.set_circle {
+    width: 20px;
+    height: 20px;
+    border: #323232 1px solid;
+    border-radius: 100%;
+}
+
+.set {
+    background-color: #323232;
+}
+
+#timeout_timer {
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 0 15px;
+}
+
+#timeout_timer p{
+    margin: 0;
+    text-align: center;
+}
+
+#timer_label{
+    font-size: 12px;
+}
+
+#timer {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.timeout_section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#timeout_button {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#timeout_button_container {
+    margin-top: 10px;
+}

@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Kameron&family=Manrope:wght@400;700&display=swap");
+
+* {
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: white;
+    --bg-secondary: hsl(0, 0%, 92%);
+    --typo-primary-color: black;
+    --typo-accent-color: white;
+    --accent-color: black;
+    --secondary-accent-color: #323232;
+    --border-radius: 8px;
+    --border-radius-inner: 7px;
+    --input-left-padding: 15px;
+    --placeholder-side-padding: 5px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: "Manrope", sans-serif;
+}
+
+header {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+main {
+    width: 100%;
+    max-width: 600px;
+    height: 800px;
+    margin: auto;
+    padding: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+button,
+label {
+    user-select: none;
+}
+
+.box {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--accent-color);
+}
+
+button {
+    padding: 5px 30px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
+    background-color: var(--accent-color);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    color: var(--typo-accent-color);
+
+}
+
+#team_registration_container {
+    padding: 30px
+}
+
+#team_names {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+
+.input_container {
+    position: relative;
+}
+
+input {
+    font-size: 1rem;
+    padding: 10px var(--input-left-padding);
+}
+
+.floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: calc(var(--input-left-padding) - var(--placeholder-side-padding));
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.2s ease all;
+    padding: 0 var(--placeholder-side-padding);
+    color: grey;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label{
+    top: 0;
+    font-size: .6875rem;
+    opacity: 1;
+    background-color: var(--bg-color);
+    color: var(--typo-primary-color);
+}
+
+button:hover {
+    background-color: var(--secondary-accent-color);
+    color: var(--typo-accent-color);
+}
+
+.overlay_window {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0 0 0 / 80%);
+    visibility: visible;
+    padding: 35px;
+}
+
+.overlay_header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close_overlay_button {
+    cursor: pointer;
+}
+
+.overlay_content {
+    background-color: var(--bg-color);
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    overflow: auto;
+}
+
+.game_information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.game_information h1{
+    margin: 0;
+}
+
+.game_information h2{
+    margin: 0;
+}
+
+.stats_container {
+    padding: 10px;
+}
+
+.stats {
+    width: 100%;
+    display: flex;
+}
+
+.team_names {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.team_stats {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.team1_stats {
+    flex-grow: 1;
+    border-right: #323232 solid 0.5px;
+    align-items: flex-end;
+}
+.team2_stats {
+    flex-grow: 1;
+    border-left: #323232 solid 0.5px;
+    align-items: flex-start;
+}
+
+.export_data_button_container {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+

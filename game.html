@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="NikolTh">
+    <meta name="description" content="msc project">
+    <meta name="keywords" content="HTML, web">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Volleyball Game</title>
+    <link rel="shortcut icon" href="volleyball.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Volleyball Game</h1>
+    </header>
+    <main>
+        <section id="serving_team_section">
+            <p id="serving_team_label">Serving team: </p>
+            <p id="serving_team">34</p>
+        </section>
+        <section class="box" id="score_section">
+            <button id="team1_score_button" class="score_button">+</button>
+            <div id="team1_score_container" class="team_score_container">
+                <p id="team1_name" class="team_name"></p>
+                <p id="team1_score" class="team_score">0</p>
+            </div>
+            <div id="team2_score_container" class="team_score_container">
+                <p id="team2_name" class="team_name"></p>
+                <p id="team2_score" class="team_score">0</p>
+            </div>
+            <button id="team2_score_button" class="score_button">+</button>
+        </section>
+        <section id="set_section">
+            <div id="team1_sets_container" class="team_sets_container">
+                <div class="set_circle set3 no_set"></div>
+                <div class="set_circle set2 no_set"></div>
+                <div class="set_circle set1 no_set"></div>
+            </div>
+            <div id="timeout_timer">
+                <p id="timer_label">Timeout timer</p>
+                <p id="timer">-</p>
+            </div>
+            <div id="team2_sets_container" class="team_sets_container">
+                <div class="set_circle set1 no_set"></div>
+                <div class="set_circle set2 no_set"></div>
+                <div class="set_circle set3 no_set"></div>
+            </div>
+        </section>
+        <section class="timeout_section">
+            <div id="timeout_button_container">
+                <button id="timeout_button">
+                    <iconify-icon icon="material-symbols:avg-time-outline-rounded" style="color: white;" width="28" height="28"></iconify-icon>
+                </button>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="game.js"></script>
+</body>
+</html>

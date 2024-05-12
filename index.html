@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="NikolTh">
+        <meta name="description" content="msc project">
+        <meta name="keywords" content="HTML, web">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Volleyball Game</title>
+        <link rel="shortcut icon" href="volleyball.svg" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="title">Volleyball Game</h1>
+        </header>
+        <main>
+            <div class="box" id="team_registration_container">
+
+                <form id="team_names">
+
+                    <div class="input_container">
+                        <input type="text" name="team1" class="box" id="team1" required />
+                        <span class="floating-label">Ομάδα 1:</span>
+                    </div>
+
+                    <div class="input_container">
+                        <input type="text" name="team2" class="box" id="team2" required>
+                        <span class="floating-label">Ομάδα 2:</span>
+                    </div>
+                    <button type="submit">Καταχώρηση</button>
+                </form>
+
+            </div>
+        </main>
+        <script type="module" src="team_registration.js"></script>
+    </body>
+</html>
